@@ -691,7 +691,7 @@ defmodule Timex.Duration do
       ...> result == 4
       true
   """
-  @spec measure((() -> any)) :: {__MODULE__.t(), any}
+  @spec measure((-> any)) :: {__MODULE__.t(), any}
   def measure(fun) when is_function(fun) do
     {time, result} = :timer.tc(fun, [])
     {Duration.from_microseconds(time), result}

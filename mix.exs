@@ -7,7 +7,7 @@ defmodule Timex.Mixfile do
     [
       app: :timex,
       version: @version,
-      elixir: "~> 1.11",
+      elixir: "~> 1.12",
       description: description(),
       package: package(),
       deps: deps(),
